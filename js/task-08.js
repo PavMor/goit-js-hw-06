@@ -9,9 +9,10 @@ function onFormSubmit(event) {
     email,
     password,
   };
-  console.log(formData);
-  form.reset();
   if (email.length === 0 || password.length === 0) {
     alert("All fields must be completed!");
+  } else {
+    console.log(formData);
+    form.reset();
   }
 }
